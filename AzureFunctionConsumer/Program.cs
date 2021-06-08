@@ -45,11 +45,11 @@ namespace AzureFunctionConsumer
                     switch (selection)
                     {
                         case 1:
-                            WriteLine("You selected Event Hub.");
+                            WriteLine("Você selected Event Hub.");
                             MainEventHubAsync(args).GetAwaiter().GetResult();
                             break;
                         case 2:
-                            WriteLine("You selected Storage Queue.");
+                            WriteLine("You selecionou Storage Queue.");
                             MainStorageQueueAsync(args).GetAwaiter().GetResult();
                             break;
                         case 3:
@@ -85,7 +85,7 @@ namespace AzureFunctionConsumer
                             WriteLine("Ainda não implementado.");
                             break;
                         case 11:
-                            WriteLine("You selected SignalR.");
+                            WriteLine("Você selecionou o SignalR.");
                             WriteLine("NOT YET IMPLEMENTED.");
                             break;
                         case 12:
@@ -93,7 +93,7 @@ namespace AzureFunctionConsumer
                             WriteLine("This one is run completely from the portal.");
                             break;
                         case 13:
-                            WriteLine("Bye.");
+                            WriteLine("Adeus.");
                             keepGoing = false;
                             break;
                         default:
